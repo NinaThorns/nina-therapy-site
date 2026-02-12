@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nina Thorns | Inner Freedom Therapy</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; color:#2b2b2b; background:#faf9f6; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { display:flex; align-items:center; gap:16px; padding: 18px 0; }
+    header img { height:64px; }
+    nav { margin-left:auto; display:flex; gap:18px; font-size:14px; }
+    nav a { color:#2b2b2b; text-decoration:none; }
+    .hero { display:grid; grid-template-columns: 1.1fr 0.9fr; gap:32px; align-items:center; padding: 24px 0 10px; }
+    .hero img { width:100%; border-radius:18px; }
+    h1 { margin:0 0 8px; font-size:42px; font-weight:700; }
+    .sub { margin:0 0 16px; font-size:18px; color:#4a4a4a; }
+    .btn { display:inline-block; padding: 12px 18px; border-radius:999px; background:#6f8f78; color:white; text-decoration:none; font-weight:600; }
+    .card { background:white; border-radius:18px; padding:18px; box-shadow:0 6px 18px rgba(0,0,0,0.06); margin: 24px 0; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { padding:12px; border-bottom:1px solid #eee; text-align:left; }
+    th { font-size:16px; }
+    footer { padding: 26px 0; font-size:13px; color:#6a6a6a; }
+    @media (max-width: 820px){
+      .hero { grid-template-columns: 1fr; }
+      nav { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logo.png" alt="Nina Thorns Inner Freedom Therapy logo">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Nina Thorns</h1>
+        <p class="sub">Inner Freedom Therapy</p>
+        <p>A calm, compassionate space to pause, reflect, and create change.</p>
+        <a class="btn" href="#contact">Book a free consultation</a>
+      </div>
+      <img src="headshot.jpg" alt="Nina Thorns">
+    </section>
+
+    <section class="card" id="about">
+      <h2>Welcome</h2>
+      <p>I offer therapy, counselling, and hypnotherapy for adults who are navigating emotional challenges, feeling overwhelmed, or finding themselves stuck in patterns that no longer serve them.</p>
+    </section>
+
+    <section class="card">
+      <h2>Book a free consultation</h2>
+      <table>
+        <tr>
+          <th>Online</th>
+          <td>Video or phone session</td>
+        </tr>
+        <tr>
+          <th>In person</th>
+          <td>Face-to-face appointments</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="card" id="services">
+      <h2>How I can support you</h2>
+      <ul>
+        <li>Therapy & counselling</li>
+        <li>Hypnotherapy</li>
+        <li>Stress, overwhelm, anxiety, low mood, life transitions</li>
+      </ul>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <strong>youremail@example.com</strong></p>
+      <p>Location: <strong>Your town/city</strong> • Online sessions available</p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Nina Thorns | Inner Freedom Therapy
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
